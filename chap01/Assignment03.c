@@ -1,5 +1,5 @@
 /*
-*파일명 : Core C Programming 2nd Edition Chap02 Proframming Assignment03
+* 파일명 : Core C Programming 2nd Edition Chap02 Proframming Assignment03
 * 내용 : 날짜를 연, 월, 일로 입력받아서 출력하는 프로그램을 작성하시오. 연, 월, 일은 정수로 입력받는다.
 * 작성자 : 나영탁
 * 날짜 : 2025.03.22
