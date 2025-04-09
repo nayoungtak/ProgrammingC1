@@ -16,9 +16,9 @@ void solution(void)
 	double si = 0.0;
 	printf("角荐? ");
 	scanf("%lf", &si);
+	printf("力蚌: %e\n", si * si);
 
-	printf("力蚌: %le\n", si * si);
-	printf("技力蚌: %le", si * si * si);
+	printf("技力蚌: %e", si * si * si);
 
 	return;
 }
