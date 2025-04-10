@@ -9,7 +9,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int assignment0000(void);
+double assignment0000(void);
 
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 	return 0;
 }
 
-int assignment0000(void)
+double assignment0000(void)
 {
 	int a = 0;
 	printf("재생시간(초)? ");
