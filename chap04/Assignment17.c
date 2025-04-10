@@ -10,7 +10,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-double assignment0407(void);
+double assignment0417(void);
 
 int main(void)
 {
@@ -20,11 +20,16 @@ int main(void)
 
 double assignment0417(void)
 {
-	int a = 0;
-	printf("재생시간(초)? ");
-	scanf("%d", &a);
+	unsigned int num1, num2, num3, num4;
+	num1 = 1 << 7;
+	num2 = 1 << 15;
+	num3 = 1 << 23;
+	num4 = 1 << 31;
 
-	printf("%d입니다.", a);
+	printf("7번 비트만 1인 값: %06X %d\n", num1,num1);
+	printf("15번 비트만 1인 값: %06X %d\n", num2, num2);
+	printf("23번 비트만 1인 값: %06X %d\n", num3, num3);
+	printf("31번 비트만 1인 값: %06X %d\n", num4, num4);
 
 	return 0;
 }
