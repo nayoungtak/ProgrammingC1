@@ -24,7 +24,7 @@ int assignment0409(void)
 	scanf("%d", &second);
 
 	int minute = 0, hour = 0, ssecond = 0;
-	hour = second / 3600;
+	hour = (second / 3600);
 	minute = (second % 3600) / 60;
 	ssecond = (second % 3600) % 60;
 
