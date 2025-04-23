@@ -20,6 +20,24 @@ int main(void)
 
 double assignment0000(void)
 {
+	int n = 3;
+	if (n > 0)
+	{
+		n *= 2;
+		if (n < 5)
+		{
+			n += 5;
+		}
+		else
+		{
+			n -= 5;
+		}
+	}
+	else
+	{
+		n++;
+	}
+	printf("n = %d\n", n);
 
 	return 0;
 }

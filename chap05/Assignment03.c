@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 double assignment0503(void);
+double gesan(int gus);
 
 int main(void)
 {
@@ -23,11 +24,7 @@ double assignment0503(void)
 {
 	int gus = 0;
 
-	printf("거스름돈 ? ");
-	scanf("%d", &gus);
-
-	gus = gus - (gus % 10);
-	printf("거스름돈 (10원 미만 절삭): %d\n", gus);
+	gus = gesan(gus);
 
 	if ((gus / 50000) != 0)
 	{
@@ -62,5 +59,14 @@ double assignment0503(void)
 	return 0;
 }
 
+double gesan(int gus)
+{
 
+	printf("거스름돈 ? ");
+	scanf("%d", &gus);
 
+	gus = gus - (gus % 10);
+	printf("거스름돈 (10원 미만 절삭): %d\n", gus);
+
+	return gus;
+}
