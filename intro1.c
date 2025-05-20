@@ -1,10 +1,10 @@
 
-#include <stdio.h>
+#include <stdio.h>;
 
 int main()
 {
-	printf("Hello World\n");
-
+	char PI = "pi";
+	printf("PI = %s\n", PI);
+	
 	return 0;
-
 }
