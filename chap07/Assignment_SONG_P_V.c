@@ -41,7 +41,7 @@ void printArray(int arr[], int size)
 	int i = 0;
 	for (i = 0; i < size; i++) //arr[0]부터 i가 size보다 커지기 전까지 i에 1씩 더한다.
 	{
-		printf("%d ", arr[i]); //arr[0]부터 출력
+		printf("%d ", arr[i]); //arr[0]부터 출력 i가 size보다 작을때만
 	}
 	printf("\n");
 }
