@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define Scale 100
+#define Scale 100	
 
 double assignment0619(void);
 void graph(int in, int scale);

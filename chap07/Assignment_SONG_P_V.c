@@ -46,7 +46,6 @@ void printArray(int arr[], int size)
 	printf("\n");
 }
 
-
 void fillCD(int arr[], int size, int start, int diff)
 {
 	// arr[] = 등차수열 공간, size = 등차수열 개수, start = 초기값, diff = 공차
