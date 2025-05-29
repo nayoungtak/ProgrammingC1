@@ -11,6 +11,8 @@
 #include <stdio.h>
 
 int assignment04(void);
+int maxmum(int arrangement[]);
+int minimum(int arrangement[]);
 
 
 int main(void)
@@ -22,6 +24,48 @@ int main(void)
 
 int assignment04(void)
 {
+	int arrangement[10] = { 23, 45, 62, 12, 99, 83, 23, 50, 72, 37 };
+	
+	maxmum(arrangement);
+	minimum(arrangement);
+
+	return 0;
+}
+
+int maxmum(int arrangement[])
+{
+	int maxvalue = arrangement[0];
+	int maxindex = 0;
+
+	for (int i = 0; i < 10; i++)
+	{
+		if (arrangement[i] > maxvalue)
+		{
+			maxindex = i;
+			maxvalue = arrangement[i];
+		}
+	}
+	
+	printf("ÃÖ´ñ°ª: ÀÎµ¦½º=%d, °ª=%d\n", maxindex, maxvalue);
+
+	return 0;
+}
+
+int minimum(int arrangement[])
+{
+	int minivalue = arrangement[0];
+	int miniindex = 0;
+
+	for (int i = 0; i < 10; i++)
+	{
+		if (arrangement[i] < minivalue)
+		{
+			miniindex = i;
+			minivalue = arrangement[i];
+		}
+	}
+
+	printf("ÃÖ¼Ú°ª: ÀÎµ¦½º=%d, °ª=%d\n", miniindex, minivalue);
 
 	return 0;
 }
