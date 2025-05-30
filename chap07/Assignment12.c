@@ -71,7 +71,9 @@ void SeatReservation(char seat[])
 		if (seat[i] == 'O')
 		{
 			seat[i] = 'X';
+
 			printf("%d ", i + 1);
+			
 			temp++;
 		}
 	}
