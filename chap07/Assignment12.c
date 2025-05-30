@@ -11,7 +11,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int assignment12(void);
+#define NUM 10
+
+void assignment12(void);
 
 
 int main(void)
@@ -21,8 +23,10 @@ int main(void)
 	return 0;
 }
 
-int assignment12(void)
+void assignment12(void)
 {
+	char seat[NUM] = { 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O' };
 
-	return 0;
+	
 }
+
