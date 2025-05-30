@@ -29,9 +29,8 @@ int assignment06(void)
 	printf("배열: ");
 	printArray(arr, arrsize);
 
-	reverse(arr, arrsize);
-	
 	printf("역순: ");
+	reverse(arr, arrsize);
 	printArray(arr, arrsize);
 
 	return 0;
