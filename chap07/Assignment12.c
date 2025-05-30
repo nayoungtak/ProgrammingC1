@@ -11,9 +11,11 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-#define NUM 10
+#define SEATNUM 10
 
 void assignment12(void);
+void SeeSeat(char seat[]);
+void SeatReservation(char seat[]);
 
 
 int main(void)
@@ -25,8 +27,55 @@ int main(void)
 
 void assignment12(void)
 {
-	char seat[NUM] = { 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O' };
+	char seat[SEATNUM] = { 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O' };
 
-	
+	while (1)
+	{
+		SeatReservation(seat);
+
+		int allReserved = 1;
+		for (int i = 0; i < SEATNUM; i++) {
+			if (seat[i] == 'O') {
+				allReserved = 0;
+				break;
+			}
+		}
+
+		if (allReserved)
+		{
+			break;
+		}
+	}
+}
+
+void SeeSeat(char seat[])
+{
+	printf("현재 좌석: [ ");
+	for (int i = 0; i < SEATNUM; i++)
+	{
+		printf("%c ", seat[i]);
+	}
+	printf("]\n");
+}
+
+void SeatReservation(char seat[])
+{
+	int numofseat = 0, temp = 0;
+
+	SeeSeat(seat);
+	printf("예매할 좌석수? ");
+	scanf("%d", &numofseat);
+
+	for (int i = 0; i < SEATNUM && temp < numofseat; i++)
+	{
+		if (seat[i] == 'O')
+		{
+			seat[i] = 'X';
+			printf("%d ", i + 1);
+			temp++;
+		}
+	}
+
+	printf("번 좌석을 예매했습니다.\n");
 }
 
