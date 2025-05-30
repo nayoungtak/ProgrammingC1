@@ -1,3 +1,10 @@
+/*
+* 파일명: Core C Programming 2nd Edition Chap07 Programming Assignment06
+* 내용 : 크기가 10인 실수형 배열에 대해서 원소들을 역순으로 만드는 프로그램을 작성하시오. 실수형 배열의 초기값은 마음대로 정하시오.
+* 작성자 : 나영탁
+* 날짜 : 2025.05.30
+* 버전 : v4.0 - Kim hemi
+*/
 
 #include <stdio.h>
 
