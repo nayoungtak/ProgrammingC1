@@ -9,11 +9,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-#define SIZE 3
+#define ROWSIZE 3
+#define COLUMNSIZE 3
 
 int assignment10(void);
-void addMatrix(int xarr[][SIZE], int yarr[][SIZE], int xyarr[SIZE][SIZE]);
-void printMatrix(int xyarr[][SIZE]);
+void addMatrix(int xarr[COLUMNSIZE][ROWSIZE], int yarr[COLUMNSIZE][ROWSIZE], int xyarr[COLUMNSIZE][ROWSIZE]);
+void printMatrix(int xyarr[COLUMNSIZE][ROWSIZE]);
 
 
 int main(void)
@@ -25,9 +26,9 @@ int main(void)
 
 int assignment10(void)
 {
-	int xarr[SIZE][SIZE] = { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } };
-	int yarr[SIZE][SIZE] = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
-	int xyarr[SIZE][SIZE] = { 0 };
+	int xarr[COLUMNSIZE][ROWSIZE] = { { 10, 20, 30 }, { 40, 50, 60 }, { 70, 80, 90 } };
+	int yarr[COLUMNSIZE][ROWSIZE] = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
+	int xyarr[COLUMNSIZE][ROWSIZE] = { 0 };
 
 	addMatrix(xarr, yarr, xyarr);
 
@@ -41,24 +42,24 @@ int assignment10(void)
 	return 0;
 }
 
-void addMatrix(int xarr[][SIZE], int yarr[][SIZE], int xyarr[SIZE][SIZE])
+void addMatrix(int xarr[COLUMNSIZE][ROWSIZE], int yarr[COLUMNSIZE][ROWSIZE], int xyarr[COLUMNSIZE][ROWSIZE])
 {
-	for (int i = 0; i < SIZE; i++)
+	for (int i = 0; i < COLUMNSIZE; i++)
 	{
-		for (int j = 0; j < SIZE; j++)
+		for (int j = 0; j < ROWSIZE; j++)
 		{
 			xyarr[i][j] = xarr[i][j] + yarr[i][j];
 		}
 	}
 }
 
-void printMatrix(int arr[][SIZE])
+void printMatrix(int arr[COLUMNSIZE][ROWSIZE])
 {
-	for (int i = 0; i < SIZE; i++)
+	for (int i = 0; i < COLUMNSIZE; i++)
 	{
-		for (int j = 0; j < SIZE; j++)
+		for (int j = 0; j < ROWSIZE; j++)
 		{
-			printf("%d ", arr[i][j]);
+			printf(" %d", arr[i][j]);
 		}
 		printf("\n");
 	}
