@@ -31,8 +31,6 @@ void assignment12(void)
 
 	while (1)
 	{
-		SeatReservation(seat);
-
 		int allReserved = 1;
 		for (int i = 0; i < SEATNUM; i++) {
 			if (seat[i] == 'O') {
@@ -45,6 +43,8 @@ void assignment12(void)
 		{
 			break;
 		}
+
+		SeatReservation(seat);
 	}
 }
 
